@@ -1,6 +1,7 @@
 /* Program 3.1 from PTRTUT10.HTM 6/13/97 */
 
 #include <stdio.h>
+#include <string.h>
 
 char strA[80] = "A string to be used for demonstration purposes";
 char strB[80];
@@ -14,9 +15,9 @@ int main(void)
 	puts(pA);	/* show what pA is pointing to */
 	pB = strB;	/* point pB at string B */
 	putchar('\n');	/* move down one line on the screen */
-	while(*pA != '\0')	/* line A (see text) */
+	while(*pA != '\0')	 /*line A (see text)*/ 
 	{
-		*pB++ = *pA++;	/* line B (see text) */
+		*pB++ = *pA++;	 /*line B (see text) */
 	}
 	*pB = '\0';		/* line C (see text) */
 	puts(strB);		/* show strB on screen */
