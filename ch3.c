@@ -7,7 +7,7 @@ char strB[80];
 
 int main(void)
 {
-	char *pA;	/* a pointer to type character */
+    char *pA;	/* a pointer to type character */
 	char *pB;	/* another pointer to type character */
 	puts(strA);	/* show string A */
 	pA = strA;	/* point pA at string A */
